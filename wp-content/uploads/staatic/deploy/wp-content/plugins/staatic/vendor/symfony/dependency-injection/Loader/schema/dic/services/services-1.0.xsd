@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><schema xmlns="http://symfony.com/schema/dic/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetnamespace="http://symfony.com/schema/dic/services" elementformdefault="qualified">
+
+  <annotation>
+    <documentation></documentation>
+  </annotation>
+
+  <element name="container" type="container"></element>
+
+  <complextype name="container">
+    <annotation>
+      <documentation></documentation>
+    </annotation>
+    <sequence>
+      <group ref="foreign"></group>
+      <sequence minoccurs="0">
+        <element name="imports" type="imports"></element>
+        <group ref="foreign"></group>
+      </sequence>
+      <sequence minoccurs="0">
+        <element name="parameters" type="parameters"></element>
+        <group ref="foreign"></group>
+      </sequence>
+      <sequence minoccurs="0">
+        <element name="services" type="services"></element>
+        <group ref="foreign"></group>
+      </sequence>
+      <sequence minoccurs="0" maxoccurs="unbounded">
+        <element name="when" type="when"></element>
+      </sequence>
+    </sequence>
+  </complextype>
+
+  <complextype name="when">
+    <sequence>
+      <group ref="foreign"></group>
+      <sequence minoccurs="0">
+        <element name="imports" type="imports"></element>
+        <group ref="foreign"></group>
+      </sequence>
+      <sequence minoccurs="0">
+        <element name="parameters" type="parameters"></element>
+        <group ref="foreign"></group>
+      </sequence>
+      <sequence minoccurs="0">
+        <element name="services" type="services"></element>
+        <group ref="foreign"></group>
+      </sequence>
+    </sequence>
+    <attribute name="env" type="xsd:string" use="required"></attribute>
+  </complextype>
+
+  <group name="foreign">
+    <sequence>
+      <any namespace="##other" processcontents="lax" minoccurs="0" maxoccurs="unbounded"></any>
+    </sequence>
+  </group>
+
+  <complextype name="services">
+    <annotation>
+      <documentation></documentation>
+    </annotation>
+    <choice maxoccurs="unbounded">
+      <element name="service" type="service" minoccurs="1"></element>
+      <element name="prototype" type="prototype" minoccurs="0"></element>
+      <element name="defaults" type="defaults" minoccurs="0" maxoccurs="1"></element>
+      <element name="instanceof" type="instanceof" minoccurs="0"></element>
+      <element name="stack" type="stack" minoccurs="0"></element>
+    </choice>
+  </complextype>
+
+  <complextype name="imports">
+    <annotation>
+      <documentation></documentation>
+    </annotation>
+    <choice minoccurs="1" maxoccurs="unbounded">
+      <element name="import" type="import"></element>
+    </choice>
+  </complextype>
+
+  <complextype name="import">
+    <annotation>
+      <documentation></documentation>
+    </annotation>
+    <attribute name="resource" type="xsd:string" use="required"></attribute>
+    <attribute name="ignore-errors" type="ignore_errors"></attribute>
+    <attribute name="type" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="callable">
+    <choice minoccurs="0" maxoccurs="1">
+      <element name="service" type="service" minoccurs="0" maxoccurs="1"></element>
+    </choice>
+    <attribute name="service" type="xsd:string"></attribute>
+    <attribute name="class" type="xsd:string"></attribute>
+    <attribute name="method" type="xsd:string"></attribute>
+    <attribute name="function" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="factory">
+    <choice minoccurs="0" maxoccurs="1">
+      <element name="service" type="service" minoccurs="0" maxoccurs="1"></element>
+    </choice>
+    <attribute name="service" type="xsd:string"></attribute>
+    <attribute name="class" type="xsd:string"></attribute>
+    <attribute name="method" type="xsd:string"></attribute>
+    <attribute name="function" type="xsd:string"></attribute>
+    <attribute name="expression" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="defaults">
+    <annotation>
+      <documentation></documentation>
+    </annotation>
+    <choice maxoccurs="unbounded">
+      <element name="tag" type="tag" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="bind" type="bind" minoccurs="0" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="public" type="boolean"></attribute>
+    <attribute name="autowire" type="boolean"></attribute>
+    <attribute name="autoconfigure" type="boolean"></attribute>
+  </complextype>
+
+  <complextype name="service">
+    <choice maxoccurs="unbounded">
+      <element name="file" type="xsd:string" minoccurs="0" maxoccurs="1"></element>
+      <element name="argument" type="argument" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="configurator" type="callable" minoccurs="0" maxoccurs="1"></element>
+      <element name="factory" type="factory" minoccurs="0" maxoccurs="1"></element>
+      <element name="deprecated" type="deprecated" minoccurs="0" maxoccurs="1"></element>
+      <element name="call" type="call" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="tag" type="tag" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="property" type="property" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="bind" type="bind" minoccurs="0" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="id" type="xsd:string"></attribute>
+    <attribute name="class" type="xsd:string"></attribute>
+    <attribute name="shared" type="boolean"></attribute>
+    <attribute name="public" type="boolean"></attribute>
+    <attribute name="synthetic" type="boolean"></attribute>
+    <attribute name="lazy" type="xsd:string"></attribute>
+    <attribute name="abstract" type="boolean"></attribute>
+    <attribute name="alias" type="xsd:string"></attribute>
+    <attribute name="parent" type="xsd:string"></attribute>
+    <attribute name="decorates" type="xsd:string"></attribute>
+    <attribute name="decoration-on-invalid" type="invalid_decorated_service_sequence"></attribute>
+    <attribute name="decoration-inner-name" type="xsd:string"></attribute>
+    <attribute name="decoration-priority" type="xsd:integer"></attribute>
+    <attribute name="autowire" type="boolean"></attribute>
+    <attribute name="autoconfigure" type="boolean"></attribute>
+  </complextype>
+
+  <complextype name="instanceof">
+    <choice maxoccurs="unbounded">
+      <element name="configurator" type="callable" minoccurs="0" maxoccurs="1"></element>
+      <element name="call" type="call" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="tag" type="tag" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="property" type="property" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="bind" type="bind" minoccurs="0" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="id" type="xsd:string" use="required"></attribute>
+    <attribute name="shared" type="boolean"></attribute>
+    <attribute name="public" type="boolean"></attribute>
+    <attribute name="lazy" type="xsd:string"></attribute>
+    <attribute name="autowire" type="boolean"></attribute>
+    <attribute name="autoconfigure" type="boolean"></attribute>
+  </complextype>
+
+  <complextype name="prototype">
+    <choice maxoccurs="unbounded">
+      <element name="argument" type="argument" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="configurator" type="callable" minoccurs="0" maxoccurs="1"></element>
+      <element name="factory" type="factory" minoccurs="0" maxoccurs="1"></element>
+      <element name="deprecated" type="deprecated" minoccurs="0" maxoccurs="1"></element>
+      <element name="call" type="call" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="tag" type="tag" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="property" type="property" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="bind" type="bind" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="exclude" type="xsd:string" minoccurs="0" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="namespace" type="xsd:string" use="required"></attribute>
+    <attribute name="resource" type="xsd:string" use="required"></attribute>
+    <attribute name="exclude" type="xsd:string"></attribute>
+    <attribute name="shared" type="boolean"></attribute>
+    <attribute name="public" type="boolean"></attribute>
+    <attribute name="lazy" type="xsd:string"></attribute>
+    <attribute name="abstract" type="boolean"></attribute>
+    <attribute name="parent" type="xsd:string"></attribute>
+    <attribute name="autowire" type="boolean"></attribute>
+    <attribute name="autoconfigure" type="boolean"></attribute>
+  </complextype>
+
+  <complextype name="stack">
+    <choice maxoccurs="unbounded">
+      <element name="service" type="service" minoccurs="1"></element>
+      <element name="deprecated" type="deprecated" minoccurs="0" maxoccurs="1"></element>
+    </choice>
+    <attribute name="id" type="xsd:string" use="required"></attribute>
+    <attribute name="public" type="boolean"></attribute>
+  </complextype>
+
+  <complextype name="tag" mixed="true">
+    <choice minoccurs="0">
+      <element name="attribute" type="tag_attribute" maxoccurs="unbounded"></element>
+    </choice>
+    <anyattribute namespace="##any" processcontents="lax"></anyattribute>
+  </complextype>
+
+  <complextype name="deprecated">
+    <simplecontent>
+      <extension base="xsd:string">
+        <attribute name="package" type="xsd:string" use="required"></attribute>
+        <attribute name="version" type="xsd:string" use="required"></attribute>
+      </extension>
+    </simplecontent>
+  </complextype>
+
+  <complextype name="tag_attribute" mixed="true">
+    <choice minoccurs="0">
+      <element name="attribute" type="tag_attribute" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="name" type="xsd:string" use="required"></attribute>
+  </complextype>
+
+  <complextype name="parameters">
+    <choice minoccurs="1" maxoccurs="unbounded">
+      <element name="parameter" type="parameter"></element>
+    </choice>
+    <attribute name="type" type="parameter_type"></attribute>
+    <attribute name="key" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="parameter" mixed="true">
+    <choice minoccurs="0" maxoccurs="unbounded">
+      <element name="parameter" type="parameter"></element>
+    </choice>
+    <attribute name="type" type="parameter_type"></attribute>
+    <attribute name="id" type="xsd:string"></attribute>
+    <attribute name="key" type="xsd:string"></attribute>
+    <attribute name="on-invalid" type="invalid_sequence"></attribute>
+  </complextype>
+
+  <complextype name="property" mixed="true">
+    <choice minoccurs="0">
+      <element name="property" type="property" maxoccurs="unbounded"></element>
+      <element name="service" type="service"></element>
+    </choice>
+    <attribute name="type" type="argument_type"></attribute>
+    <attribute name="id" type="xsd:string"></attribute>
+    <attribute name="key" type="xsd:string"></attribute>
+    <attribute name="name" type="xsd:string"></attribute>
+    <attribute name="on-invalid" type="invalid_sequence"></attribute>
+    <attribute name="tag" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="bind" mixed="true">
+    <choice maxoccurs="unbounded">
+      <element name="bind" type="bind_argument" minoccurs="0" maxoccurs="unbounded"></element>
+      <element name="service" type="service"></element>
+    </choice>
+    <attribute name="type" type="argument_type"></attribute>
+    <attribute name="id" type="xsd:string"></attribute>
+    <attribute name="key" type="xsd:string" use="required"></attribute>
+    <attribute name="on-invalid" type="invalid_sequence"></attribute>
+    <attribute name="method" type="xsd:string"></attribute>
+    <attribute name="tag" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="bind_argument" mixed="true">
+    <choice minoccurs="0">
+      <element name="bind" type="bind_argument" maxoccurs="unbounded"></element>
+      <element name="service" type="service"></element>
+      <element name="exclude" type="xsd:string" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="type" type="argument_type"></attribute>
+    <attribute name="id" type="xsd:string"></attribute>
+    <attribute name="key" type="xsd:string"></attribute>
+    <attribute name="index" type="xsd:integer"></attribute>
+    <attribute name="on-invalid" type="invalid_sequence"></attribute>
+    <attribute name="tag" type="xsd:string"></attribute>
+    <attribute name="index-by" type="xsd:string"></attribute>
+    <attribute name="default-index-method" type="xsd:string"></attribute>
+    <attribute name="default-priority-method" type="xsd:string"></attribute>
+    <attribute name="exclude" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="argument" mixed="true">
+    <choice minoccurs="0">
+      <element name="argument" type="argument" maxoccurs="unbounded"></element>
+      <element name="service" type="service"></element>
+      <element name="exclude" type="xsd:string" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="type" type="argument_type"></attribute>
+    <attribute name="id" type="xsd:string"></attribute>
+    <attribute name="key" type="xsd:string"></attribute>
+    <attribute name="index" type="xsd:integer"></attribute>
+    <attribute name="on-invalid" type="invalid_sequence"></attribute>
+    <attribute name="tag" type="xsd:string"></attribute>
+    <attribute name="index-by" type="xsd:string"></attribute>
+    <attribute name="default-index-method" type="xsd:string"></attribute>
+    <attribute name="default-priority-method" type="xsd:string"></attribute>
+    <attribute name="exclude" type="xsd:string"></attribute>
+  </complextype>
+
+  <complextype name="call">
+    <choice minoccurs="0">
+      <element name="argument" type="argument" maxoccurs="unbounded"></element>
+    </choice>
+    <attribute name="method" type="xsd:string"></attribute>
+    <attribute name="returns-clone" type="boolean"></attribute>
+  </complextype>
+
+  <simpletype name="parameter_type">
+    <restriction base="xsd:string">
+      <enumeration value="collection"></enumeration>
+      <enumeration value="string"></enumeration>
+      <enumeration value="constant"></enumeration>
+      <enumeration value="binary"></enumeration>
+    </restriction>
+  </simpletype>
+
+  <simpletype name="argument_type">
+    <restriction base="xsd:string">
+      <enumeration value="abstract"></enumeration>
+      <enumeration value="collection"></enumeration>
+      <enumeration value="service"></enumeration>
+      <enumeration value="expression"></enumeration>
+      <enumeration value="string"></enumeration>
+      <enumeration value="constant"></enumeration>
+      <enumeration value="binary"></enumeration>
+      <enumeration value="iterator"></enumeration>
+      <enumeration value="closure"></enumeration>
+      <enumeration value="service_closure"></enumeration>
+      <enumeration value="service_locator"></enumeration>
+      <!-- "tagged" is an alias of "tagged_iterator", using "tagged_iterator" is preferred. -->
+      <enumeration value="tagged"></enumeration>
+      <enumeration value="tagged_iterator"></enumeration>
+      <enumeration value="tagged_locator"></enumeration>
+    </restriction>
+  </simpletype>
+
+  <simpletype name="ignore_errors">
+    <restriction base="xsd:string">
+      <pattern value="(true|false|not_found)"></pattern>
+    </restriction>
+  </simpletype>
+
+  <simpletype name="invalid_sequence">
+    <restriction base="xsd:string">
+      <enumeration value="null"></enumeration>
+      <enumeration value="ignore"></enumeration>
+      <enumeration value="exception"></enumeration>
+      <enumeration value="ignore_uninitialized"></enumeration>
+    </restriction>
+  </simpletype>
+
+  <simpletype name="invalid_decorated_service_sequence">
+    <restriction base="xsd:string">
+      <enumeration value="null"></enumeration>
+      <enumeration value="ignore"></enumeration>
+      <enumeration value="exception"></enumeration>
+    </restriction>
+  </simpletype>
+
+  <simpletype name="boolean">
+    <restriction base="xsd:string">
+      <pattern value="(%.+%|true|false)"></pattern>
+    </restriction>
+  </simpletype>
+</schema>
+</body></html>
+<!-- Powered by Staatic (https://staatic.com/) -->
