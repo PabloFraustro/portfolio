@@ -1,0 +1,1 @@
+2024/06/26 18:24:54 [alert] 1089#0: *503 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: ::1, server: [::1]:10003
