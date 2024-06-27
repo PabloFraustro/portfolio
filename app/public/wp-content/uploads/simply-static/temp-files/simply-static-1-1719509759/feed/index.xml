@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Pablo Fraustro</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=9664" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost/feed/?simply_static_page=10924" rel="self" type="application/rss+xml" />
 	<link>https://pablofraustro.github.io/portfolio/</link>
 	<description></description>
-	<lastBuildDate>Thu, 27 Jun 2024 17:32:47 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 27 Jun 2024 17:35:26 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
