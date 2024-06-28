@@ -10248,3 +10248,4 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentythree/patterns/hidden-no-results.php on line 10
+[28-Jun-2024 07:53:14 UTC] PHP Warning:  Undefined array key "gallery_id" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php on line 343
