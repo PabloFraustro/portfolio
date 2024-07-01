@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Pablo Fraustro</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=26661" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost/feed/?simply_static_page=27801" rel="self" type="application/rss+xml" />
 	<link>https://pablofraustro.github.io/portfolio/</link>
 	<description>2D Animator and Illustrator</description>
-	<lastBuildDate>Mon, 01 Jul 2024 15:47:40 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 01 Jul 2024 15:53:58 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
