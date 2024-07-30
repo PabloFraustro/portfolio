@@ -23311,3 +23311,777 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer-centered-logo-nav.php on line 21
+[30-Jul-2024 12:57:04 UTC] Migrate Default Password
+[30-Jul-2024 12:57:04 UTC] [Migrate Default PWD]Things to migrate: [{"ID":618,"post_author":"1","post_date":"2024-07-29 21:54:22","post_date_gmt":"2024-07-29 19:54:22","post_content":"<!-- wp:group {\"metadata\":{\"name\":\"Heading\"},\"style\":{\"spacing\":{\"padding\":{\"top\":\"0\",\"bottom\":\"var:preset|spacing|30\"}}},\"className\":\"heading\",\"layout\":{\"type\":\"constrained\",\"contentSize\":\"600px\"}} -->\n<div class=\"wp-block-group heading\" style=\"padding-top:0;padding-bottom:var(--wp--preset--spacing--30)\"><!-- wp:heading {\"textAlign\":\"center\",\"level\":1,\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|30\"}}}} -->\n<h1 class=\"wp-block-heading has-text-align-center\" style=\"padding-top:var(--wp--preset--spacing--30)\">CIXI<\/h1>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|10\",\"bottom\":\"var:preset|spacing|10\",\"left\":\"0\",\"right\":\"0\"}},\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|contrast\"}}}},\"textColor\":\"contrast\",\"fontSize\":\"medium\"} -->\n<p class=\"has-text-align-center has-contrast-color has-text-color has-link-color has-medium-font-size\" style=\"padding-top:var(--wp--preset--spacing--10);padding-right:0;padding-bottom:var(--wp--preset--spacing--10);padding-left:0\">A startup in the French alps developing mobility solutions that work for an adoption of physical activity and overall wellness through electric pedaling vehicles and their technology.<\/p>\n<!-- \/wp:paragraph --><\/div>\n<!-- \/wp:group -->\n\n<!-- wp:group {\"metadata\":{\"name\":\"Content\"},\"style\":{\"spacing\":{\"padding\":{\"right\":\"0\",\"left\":\"0\",\"top\":\"0\",\"bottom\":\"var:preset|spacing|20\"}}},\"className\":\"content\",\"layout\":{\"type\":\"constrained\",\"wideSize\":\"600px\",\"contentSize\":\"600px\"}} -->\n<div class=\"wp-block-group content\" style=\"padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0\"><!-- wp:image {\"lightbox\":{\"enabled\":true},\"id\":643,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/Screens-ui-2-1024x576.png\" alt=\"\" class=\"wp-image-643\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"padding\":{\"right\":\"var:preset|spacing|20\",\"left\":\"var:preset|spacing|20\",\"bottom\":\"var:preset|spacing|30\"}}},\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group\" style=\"padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--20)\"><!-- wp:heading {\"textAlign\":\"left\",\"level\":3,\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|30\",\"top\":\"var:preset|spacing|40\"}}}} -->\n<h3 class=\"wp-block-heading has-text-align-left\" style=\"padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30)\"><strong>Onboard screens and design research<\/strong><\/h3>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph {\"style\":{\"spacing\":{\"padding\":{\"top\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"right\":\"0\"}}}} -->\n<p style=\"padding-top:0;padding-right:0;padding-bottom:0;padding-left:0\"><strong>Goal:<\/strong>&nbsp;Define and test user interactions on the Vigoz, a vehicle controlled by pedaling and tilting that arrives up to 120 km\/h.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph {\"style\":{\"spacing\":{\"padding\":{\"right\":\"0\",\"left\":\"0\"}}}} -->\n<p style=\"padding-right:0;padding-left:0\">The possible users, as we discovered, were people interested on getting healthy, but not necessarily fit or energetic. So, How to define an interactive system to support changing the \"Effort level\" and making physical activity while keeping a certain premium feeling and of course, focusing on the ride ?<\/p>\n<!-- \/wp:paragraph --><\/div>\n<!-- \/wp:group -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"50%\",\"style\":{\"spacing\":{\"blockGap\":\"0\",\"padding\":{\"right\":\"var:preset|spacing|10\",\"left\":\"var:preset|spacing|10\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-column\" style=\"padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%\"><!-- wp:paragraph -->\n<p>To understand if this interactions could work, we tested \u201clego type\u201d prototypes to switch between different interaction interfaces and screens on a first internal research with people within the company.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We decided to have a second research, inviting possible customers over and designing a full interaction experience with the pedaling environment over virtual reality to understand what way to go, which type of screens, handles and functionalities to support.&nbsp;<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For the planning of the research, with a team of three designers with different skillsets, we were able to take the best of us during this sprint. Carlos (head of design at CIXI , experience on IDEO, Lego) lead the research and interviews and designed an onboarding process, Daniel Sanchez (industrial designer) helped with the design of handles and several 3d printed elements and I took the role for the digital prototypes and \u201cmagic wizard\u201d.<\/p>\n<!-- \/wp:paragraph --><\/div>\n<!-- \/wp:column -->\n\n<!-- wp:column {\"width\":\"50%\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-column\" style=\"flex-basis:50%\"><!-- wp:image {\"lightbox\":{\"enabled\":true},\"id\":644,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/prototypes.png\" alt=\"\" class=\"wp-image-644\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"lightbox\":{\"enabled\":true},\"id\":645,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/unnamed-1-1.gif\" alt=\"\" class=\"wp-image-645\"\/><\/figure>\n<!-- \/wp:image --><\/div>\n<!-- \/wp:column --><\/div>\n<!-- \/wp:columns -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|40\",\"bottom\":\"var:preset|spacing|40\"}}},\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group\" style=\"padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":646,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/screens-top-1024x576.png\" alt=\"\" class=\"wp-image-646\"\/><\/figure>\n<!-- \/wp:image --><\/div>\n<!-- \/wp:group -->\n\n<!-- wp:paragraph {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|20\"}}}} -->\n<p style=\"padding-bottom:var(--wp--preset--spacing--20)\">The test consisted on going through a theoretical acquisition of a membership with the Vigoz through a web prototype, understanding client expectations, using a web app and pedaling on the cardboard prototype. We had really interesting results, realizing there was still a long path to support our philosophy and promote a new vehicle which is neither a bicycle nor a car.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:html -->\n<div style=\"text-align:center;display:flex;justify-content:center\"><iframe center=\"\" src=\"https:\/\/player.vimeo.com\/video\/723977908?h=e9b5b1c9c5&amp;autoplay=1&amp;loop=1&amp;autopause=0\" width=\"1280\" height=\"500\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"\"><\/iframe><\/div>\n<!-- \/wp:html -->\n\n<!-- wp:paragraph {\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|10\",\"bottom\":\"var:preset|spacing|30\"}}}} -->\n<p style=\"padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--30)\">Regarding the top touchscreen, unfortunately we had to let go the idea, it required too much cognitive effort.&nbsp;We went instead to a new solution\u2026<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2 is-cropped\"><!-- wp:image {\"id\":698,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/IMG_0156-scaled-1-1024x683.jpg\" alt=\"\" class=\"wp-image-698\"\/><figcaption class=\"wp-element-caption\">checking account<\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":700,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/DSC00320-scaled-1-1024x683.jpg\" alt=\"\" class=\"wp-image-700\"\/><figcaption class=\"wp-element-caption\">tracking tests<\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":699,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/IMG_0421-scaled-1-1024x683.jpg\" alt=\"\" class=\"wp-image-699\"\/><figcaption class=\"wp-element-caption\">app<\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":701,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/IMG_0268-scaled-1-1024x683.jpg\" alt=\"\" class=\"wp-image-701\"\/><figcaption class=\"wp-element-caption\">multiple interactions<\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":702,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/IMG_0444-scaled-1-1024x683.jpg\" alt=\"\" class=\"wp-image-702\"\/><figcaption class=\"wp-element-caption\">pedalling<\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":697,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/IMG_0255-scaled-1-1024x575.jpg\" alt=\"\" class=\"wp-image-697\"\/><figcaption class=\"wp-element-caption\">immersive prototyping<\/figcaption><\/figure>\n<!-- \/wp:image --><\/figure>\n<!-- \/wp:gallery -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"50%\",\"style\":{\"spacing\":{\"blockGap\":\"0\",\"padding\":{\"right\":\"var:preset|spacing|10\",\"left\":\"var:preset|spacing|10\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-column\" style=\"padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%\"><!-- wp:paragraph -->\n<p>After a new exploration , we realized a \"panoramic screen\" in a combination with a more \"standard screen\" could be a great spot to enhance the possibilities and physical design of the interior. We decided to leave some functions on the mobile app ,so we could focus the best of the driving sensations.<\/p>\n<!-- \/wp:paragraph --><\/div>\n<!-- \/wp:column -->\n\n<!-- wp:column {\"width\":\"50%\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-column\" style=\"flex-basis:50%\"><!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2 is-cropped\"><!-- wp:image {\"id\":707,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/screen.gif\" alt=\"\" class=\"wp-image-707\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":705,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/screen_2.gif\" alt=\"\" class=\"wp-image-705\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":706,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/unnamed-1.png\" alt=\"\" class=\"wp-image-706\"\/><\/figure>\n<!-- \/wp:image --><\/figure>\n<!-- \/wp:gallery --><\/div>\n<!-- \/wp:column --><\/div>\n<!-- \/wp:columns -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"padding\":{\"right\":\"var:preset|spacing|20\",\"left\":\"var:preset|spacing|20\",\"bottom\":\"var:preset|spacing|30\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group\" style=\"padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--20)\"><!-- wp:heading {\"textAlign\":\"left\",\"level\":3,\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|30\",\"top\":\"var:preset|spacing|60\"}}}} -->\n<h3 class=\"wp-block-heading has-text-align-left\" style=\"padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30)\"><strong>Website and content creation<\/strong><\/h3>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p>We went through a process of finding the best communication strategy to show our motivation as CIXI and a little bit of our products without showing too much.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>After some sketching and several graphic iterations, we focused on captivating interest through a combination of interactive animations by scrolling and \"easy-going\" animations by code (Lottie). <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Note: 3D render by Carlos Torres<\/p>\n<!-- \/wp:paragraph --><\/div>\n<!-- \/wp:group -->\n\n<!-- wp:gallery {\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-default is-cropped\"><!-- wp:image {\"id\":722,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/logo_animation_repeated.gif\" alt=\"\" class=\"wp-image-722\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":723,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/meditation_timing-1024x1024.png\" alt=\"\" class=\"wp-image-723\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":724,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/essential-comfort_color_padding-1024x683.png\" alt=\"\" class=\"wp-image-724\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":709,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/bike.png\" alt=\"\" class=\"wp-image-709\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":710,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/exam.png\" alt=\"\" class=\"wp-image-710\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":711,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/animation_500_l56xwnzu.gif\" alt=\"\" class=\"wp-image-711\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":712,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/fast_hyfit_1080_square-1024x1024.gif\" alt=\"\" class=\"wp-image-712\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":713,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/hand.png\" alt=\"\" class=\"wp-image-713\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":708,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/animation_500_l56x6299.gif\" alt=\"\" class=\"wp-image-708\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":714,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/gif_1-1.gif\" alt=\"\" class=\"wp-image-714\"\/><\/figure>\n<!-- \/wp:image --><\/figure>\n<!-- \/wp:gallery -->\n\n<!-- wp:paragraph -->\n<p>A mobile approach allowed us to expose our philosophy for people or companies that were curious, where we deep-fully engaged with the subjects that move us.It was also important for us to grow our subscribers, with a simple design and enough about us, we encouraged people to follow our path.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}}}} -->\n<p style=\"padding-bottom:var(--wp--preset--spacing--40)\">enjoyed being involved on the whole process of ideation, experimenting and co-creating how to communicate our vision. Flexibility, vision, getting into details and then at the big level where crucial points to arrive at this compromise of engaging, but simple introduction to what we are building.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:image {\"id\":719,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/Screens_website-1-1024x750.jpg\" alt=\"\" class=\"wp-image-719\"\/><figcaption class=\"wp-element-caption\">Mobile version<\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":718,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"http:\/\/localhost:10003\/wp-content\/uploads\/2024\/07\/Screens_website_big-1024x640.jpg\" alt=\"\" class=\"wp-image-718\"\/><figcaption class=\"wp-element-caption\">Desktop version<\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:paragraph {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|30\",\"top\":\"var:preset|spacing|10\"}}}} -->\n<p style=\"padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--30)\">A small experiment of tackling an important subject : what we design and develop and its impact on the planet. It served a starting point to understand our communication tone, for sure there is much to do to have less impact on this planet.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https:\/\/vimeo.com\/991951744\",\"type\":\"video\",\"providerNameSlug\":\"vimeo\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps:\/\/vimeo.com\/991951744\n<\/div><\/figure>\n<!-- \/wp:embed -->\n\n<!-- wp:block {\"ref\":840} \/--><\/div>\n<!-- \/wp:group -->","post_title":"CIXI design","post_excerpt":"","post_status":"publish","comment_status":"closed","ping_status":"closed","post_password":"sun8","post_name":"cixi-2","to_ping":"","pinged":"","post_modified":"2024-07-30 14:45:04","post_modified_gmt":"2024-07-30 12:45:04","post_content_filtered":"","post_parent":0,"guid":"http:\/\/localhost:10003\/?page_id=618","menu_order":0,"post_type":"page","post_mime_type":"","comment_count":"0","filter":"raw"}]
+[30-Jul-2024 12:57:04 UTC] [Migrate Default PWD]Total: 1
+[30-Jul-2024 12:57:04 UTC] [Migrate Default PWD]Migrating password for post 618
+[30-Jul-2024 12:57:04 UTC] Migrated OK
+[30-Jul-2024 13:02:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function _e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/views/redirect.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/views/redirect.php on line 4
+[30-Jul-2024 13:02:26 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Async_Request" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/classes/wp-background-process.php:19
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/classes/wp-background-process.php on line 19
+[30-Jul-2024 13:02:26 UTC] PHP Fatal error:  Uncaught Error: Class "WP_UnitTestCase" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/tests/Test_WP_Background_Process.php:13
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/tests/Test_WP_Background_Process.php on line 13
+[30-Jul-2024 13:02:26 UTC] PHP Fatal error:  Uncaught Error: Class "WP_UnitTestCase" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/tests/Test_Setup.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/tests/Test_Setup.php on line 11
+[30-Jul-2024 13:02:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_path() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/wp-background-processing.php:20
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/a5hleyrich/wp-background-processing/wp-background-processing.php on line 20
+[30-Jul-2024 13:02:27 UTC] PHP Warning:  require(/Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/build/../vendor/autoload.php): Failed to open stream: No such file or directory in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/build/generate_docs.php on line 3
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/build/../vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/build/generate_docs.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/build/generate_docs.php on line 3
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleXmlDom" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDom.php:14
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDom.php on line 14
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Interface "voku\helper\DomParserInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/AbstractDomParser.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/AbstractDomParser.php on line 7
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleHtmlDomNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDomNodeBlank.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDomNodeBlank.php on line 10
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Interface "voku\helper\SimpleHtmlAttributesInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlAttributes.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlAttributes.php on line 10
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleXmlDomNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDomNodeBlank.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDomNodeBlank.php on line 10
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleHtmlDomNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDomNode.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDomNode.php on line 10
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleHtmlDom" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDom.php:14
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDom.php on line 14
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleXmlDom" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDomBlank.php:14
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDomBlank.php on line 14
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Could not check compatibility between voku\helper\SimpleXmlDomInterface::getIterator(): voku\helper\SimpleXmlDomNodeInterface and IteratorAggregate::getIterator(): Traversable, because class voku\helper\SimpleXmlDomNodeInterface is not available in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDomInterface.php on line 226
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleXmlDomNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDomNode.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleXmlDomNode.php on line 10
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractSimpleHtmlDom" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDomBlank.php:14
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDomBlank.php on line 14
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Could not check compatibility between voku\helper\SimpleHtmlDomInterface::getIterator(): voku\helper\SimpleHtmlDomNodeInterface and IteratorAggregate::getIterator(): Traversable, because class voku\helper\SimpleHtmlDomNodeInterface is not available in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/SimpleHtmlDomInterface.php on line 243
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractDomParser" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/XmlDomParser.php:16
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/XmlDomParser.php on line 16
+[30-Jul-2024 13:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\AbstractDomParser" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/HtmlDomParser.php:34
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/simple_html_dom/src/voku/helper/HtmlDomParser.php on line 34
+[30-Jul-2024 13:02:31 UTC] PHP Fatal error:  Uncaught Error: Class "voku\helper\Bootup" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/portable-utf8/bootstrap.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/voku/portable-utf8/bootstrap.php on line 6
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Cannot declare class Attribute, because the name is already in use in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/polyfill-php80/Resources/stubs/Attribute.php on line 13
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Cannot declare class Normalizer, because the name is already in use in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php on line 3
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php:31
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php on line 31
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php:26
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php on line 26
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php on line 27
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php on line 28
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php on line 27
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php:29
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php on line 29
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\Extension\ExtensionInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\TranslatorInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Translator.php:31
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/XPath/Translator.php on line 31
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\Handler\HandlerInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/CommentHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/CommentHandler.php on line 27
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\Handler\HandlerInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/IdentifierHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/IdentifierHandler.php on line 30
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\Handler\HandlerInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/WhitespaceHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/WhitespaceHandler.php on line 28
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\Handler\HandlerInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/StringHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/StringHandler.php on line 32
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\Handler\HandlerInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/HashHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/HashHandler.php on line 30
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\Handler\HandlerInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/NumberHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Handler/NumberHandler.php on line 29
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php on line 29
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php:32
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php on line 32
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php:28
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php on line 28
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php on line 29
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Parser.php:28
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Parser/Parser.php on line 28
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/ClassNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/ClassNode.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/FunctionNode.php:26
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/FunctionNode.php on line 26
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Node\NodeInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/AbstractNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/AbstractNode.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/PseudoNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/PseudoNode.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/ElementNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/ElementNode.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/HashNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/HashNode.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/AttributeNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/AttributeNode.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/NegationNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/NegationNode.php on line 24
+[30-Jul-2024 13:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/SelectorNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/SelectorNode.php on line 24
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Node\AbstractNode" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/CombinedSelectorNode.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Node/CombinedSelectorNode.php on line 24
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Exception\ParseException" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/InternalErrorException.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/InternalErrorException.php on line 22
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Exception\ParseException" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/SyntaxErrorException.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/SyntaxErrorException.php on line 24
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Exception\ExceptionInterface" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/ParseException.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/ParseException.php on line 22
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Exception\ParseException" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/ExpressionErrorException.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/vendor/symfony/css-selector/Exception/ExpressionErrorException.php on line 22
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Task" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-simply-cdn-task.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-simply-cdn-task.php on line 8
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Task" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-cancel-task.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-cancel-task.php on line 7
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Task" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-transfer-files-locally-task.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-transfer-files-locally-task.php on line 8
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "Simply_Static\ABSPATH" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-create-zip-archive.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-create-zip-archive.php on line 4
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Task" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-setup-task.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-setup-task.php on line 8
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Task" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-generate-404-task.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-generate-404-task.php on line 8
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Task" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-fetch-urls-task.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-fetch-urls-task.php on line 8
+[30-Jul-2024 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Task" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-wrapup-task.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/tasks/class-ss-wrapup-task.php on line 7
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-rank-math-integration.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-rank-math-integration.php on line 7
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-elementor-pro-integration.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-elementor-pro-integration.php on line 7
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-yoast-integration.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-yoast-integration.php on line 5
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-elementor-integration.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-elementor-integration.php on line 7
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-aio-seo-integration.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-aio-seo-integration.php on line 5
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-cookie-yes-integration.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-cookie-yes-integration.php on line 7
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-brizy-integration.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-brizy-integration.php on line 5
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Integration" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-seopress-integration.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/integrations/class-seopress-integration.php on line 5
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filters() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/compatible-plugins.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/compatible-plugins.php on line 2
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Page_Handler" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-ss-yoast-sitemap-handler.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-ss-yoast-sitemap-handler.php on line 5
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Page_Handler" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-ss-rank-math-sitemap-handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-ss-rank-math-sitemap-handler.php on line 8
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Page_Handler" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-brizy-image-handler.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-brizy-image-handler.php on line 5
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Simply_Static\Page_Handler" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-ss-handler-404.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/simply-static/src/handlers/class-ss-handler-404.php on line 5
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/core/class-ppw-functions.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/core/class-ppw-functions.php on line 4
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "PPW_Background_Task_Manager" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/core/base/class-ppw-data-migration-manager.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/core/base/class-ppw-data-migration-manager.php on line 7
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/class-ppw-functions.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/class-ppw-functions.php on line 6
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "Elementor\Widget_Base" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/elementor/widgets/class-ppw-elementor-widget-shortcode.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/elementor/widgets/class-ppw-elementor-widget-shortcode.php on line 4
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "FLBuilderModule" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/class-ppw-module.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/class-ppw-module.php on line 3
+[30-Jul-2024 13:02:34 UTC] PHP Warning:  Undefined variable $settings in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/includes/frontend.php on line 4
+[30-Jul-2024 13:02:34 UTC] PHP Warning:  Attempt to read property "ppwp_passwords" on null in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/includes/frontend.php on line 4
+[30-Jul-2024 13:02:34 UTC] PHP Warning:  Undefined variable $settings in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/includes/frontend.php on line 30
+[30-Jul-2024 13:02:34 UTC] PHP Warning:  Attempt to read property "ppwp_whitelisted_roles" on null in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/includes/frontend.php on line 30
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filters() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/includes/frontend.php:35
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/addons/beaver-builder/modules/ppw-individual-page/includes/frontend.php on line 35
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/customizers/assets/css/sw-default2.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/customizers/assets/css/sw-default2.php on line 2
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/customizers/assets/css/sw-default3.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/customizers/assets/css/sw-default3.php on line 2
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/customizers/assets/css/sw-default1.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/customizers/assets/css/sw-default1.php on line 2
+[30-Jul-2024 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/sidebar/view-ppw-sidebar.php:13
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/sidebar/view-ppw-sidebar.php on line 13
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Class "PPW_Constants" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-no-reload-page.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-no-reload-page.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-misc.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-misc.php on line 4
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Class "PPW_Repository_Passwords" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-restore-wp-password.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-restore-wp-password.php on line 4
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_setting_type_bool_by_option_name() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-use-another-action-url.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-use-another-action-url.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_setting_type_bool_by_option_name() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-protect-excerpt.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/misc/view-ppw-protect-excerpt.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/category/view-option.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/category/view-option.php on line 7
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-form-message.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-form-message.php on line 5
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-general.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-general.php on line 3
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_post_type_for_hide_protect_content() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-hide-protected-post.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-hide-protected-post.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-auto-protect-child-page.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-auto-protect-child-page.php on line 11
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-notices-cache.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-notices-cache.php on line 10
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_all_post_types() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-custom-column-permission.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-custom-column-permission.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_editable_roles() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-whitelist-roles.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-whitelist-roles.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-remove-search-engine.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-remove-search-engine.php on line 6
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_setting_type_bool() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-remove-data.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-remove-data.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_free_get_all_page_post() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-protect-private-pages.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-protect-private-pages.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-error-message.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-error-message.php on line 5
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_setting_type_string() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-expired-cookie.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/general/view-ppw-expired-cookie.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/shortcode/view-ppw-shortcode-settings.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/shortcode/view-ppw-shortcode-settings.php on line 8
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/shortcode/view-ppw-restriced-content-form.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/shortcode/view-ppw-restriced-content-form.php on line 17
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Class "PPW_Password_Services" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/column/view-ppw-column.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/column/view-ppw-column.php on line 5
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/troubleshooting/view-ppw-troubleshooting.php:12
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/troubleshooting/view-ppw-troubleshooting.php on line 12
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_get_page_title() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-form-password.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-form-password.php on line 6
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_mod() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-countdown.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-countdown.php on line 5
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-entire-site.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-entire-site.php on line 8
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_free_get_all_page_post() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-exclude-page.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-exclude-page.php on line 6
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_setting_entire_site_type_string() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-set-password.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-set-password.php on line 5
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ppw_core_get_settings_entire_site() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-sitewide-expired-cookie.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/entire-site/view-ppw-sitewide-expired-cookie.php on line 2
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Class "PPW_Recaptcha" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/external/view-ppw-general.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/external/view-ppw-general.php on line 5
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Class "PPW_Recaptcha" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/external/view-ppw-general-configuration.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/external/view-ppw-general-configuration.php on line 5
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_meta_box() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/meta-box/view-ppw-meta-box.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/meta-box/view-ppw-meta-box.php on line 3
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function admin_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/partial-protection/view-ppw-pcp-general.php:24
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/views/partial-protection/view-ppw-pcp-general.php on line 24
+[30-Jul-2024 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Interface "PPW_Service_Interfaces" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/services/class-ppw-passwords.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/services/class-ppw-passwords.php on line 10
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Class "PPW_Background_Task_Manager" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/services/class-ppw-password-recovery-manager.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/password-protect-page/includes/services/class-ppw-password-recovery-manager.php on line 3
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/compatibility/class-modula-compatibility.php:22
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/compatibility/class-modula-compatibility.php(47): Modula_Compatibility->__construct()
+#1 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/compatibility/class-modula-compatibility.php(298): Modula_Compatibility::get_instance()
+#2 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/compatibility/class-modula-compatibility.php on line 22
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php:12
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php(730): Modula_Backward_Compatibility->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php on line 12
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/troubleshoot/class-modula-troubleshooting.php:46
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/troubleshoot/class-modula-troubleshooting.php(11): Modula_Troubleshooting->define_troubleshooting_admin_hooks()
+#1 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/troubleshoot/class-modula-troubleshooting.php(21): Modula_Troubleshooting->__construct()
+#2 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/troubleshoot/class-modula-troubleshooting.php(245): Modula_Troubleshooting::get_instance()
+#3 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/troubleshoot/class-modula-troubleshooting.php on line 46
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-importer-exporter.php:18
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-importer-exporter.php(195): Modula_Importer_Exporter->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-importer-exporter.php on line 18
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filters() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tabs/troubleshooting-options.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tabs/troubleshooting-options.php on line 2
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Class "Modula_Admin_Helpers" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tabs/modula.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tabs/modula.php on line 5
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filters() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tabs/image-licensing.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tabs/image-licensing.php on line 2
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-addons.php:11
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-addons.php(266): Modula_Addons->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-addons.php on line 11
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-onboarding.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-onboarding.php on line 3
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_admin() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-admin-helpers.php:24
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-admin-helpers.php(39): Modula_Admin_Helpers->__construct()
+#1 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-admin-helpers.php(159): Modula_Admin_Helpers::get_instance()
+#2 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-admin-helpers.php on line 24
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "MODULA_PATH" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-readme-parser.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-readme-parser.php on line 5
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/modula-js-templates.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/modula-js-templates.php on line 3
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-debug.php:22
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-debug.php(45): Modula_Debug->__construct()
+#1 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-debug.php(352): Modula_Debug::get_instance()
+#2 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-debug.php on line 22
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-albums-upgrade.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-albums-upgrade.php on line 2
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-gallery-defaults-upgrade.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-gallery-defaults-upgrade.php on line 2
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-image-licensing-upgrade.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-image-licensing-upgrade.php on line 2
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-albums-defaults-upgrade.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/templates/modal/modula-modal-albums-defaults-upgrade.php on line 2
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-admin.php:16
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-admin.php(602): Modula_Admin->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/class-modula-admin.php on line 16
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tinymce-galleries.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/admin/tinymce-galleries.php on line 4
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/libraries/class-modula-review.php:13
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/libraries/class-modula-review.php(156): Modula_Review->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/libraries/class-modula-review.php on line 13
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "MODULA_PATH" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/libraries/class-modula-template-loader.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/libraries/class-modula-template-loader.php on line 4
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-licensing.php:20
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-licensing.php(107): Modula_Licensing->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-licensing.php on line 20
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/uninstall/class-modula-uninstall.php:13
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/uninstall/class-modula-uninstall.php(217): Modula_Uninstall->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/uninstall/class-modula-uninstall.php on line 13
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/meta/social_meta.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/meta/social_meta.php on line 3
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Class "Modula_Template_Loader" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/class-modula-shortcode.php:12
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/class-modula-shortcode.php(424): Modula_Shortcode->__construct()
+#1 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/class-modula-shortcode.php on line 12
+[30-Jul-2024 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Class "Modula_Helper" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/templates/modula-gallery.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/templates/modula-gallery.php on line 2
+[30-Jul-2024 13:02:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/templates/items/item.php:1
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/templates/items/item.php on line 1
+[30-Jul-2024 13:02:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/templates/items/item-none.php:1
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/public/templates/items/item-none.php on line 1
+[30-Jul-2024 13:02:37 UTC] PHP Fatal error:  Uncaught Error: Class "DiviExtension" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/divi-extension/includes/DiviExtension.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/divi-extension/includes/DiviExtension.php on line 3
+[30-Jul-2024 13:02:37 UTC] PHP Fatal error:  Uncaught Error: Class "ET_Builder_Module" not found in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/divi-extension/includes/modules/ModulaDivi/ModulaDivi.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/divi-extension/includes/modules/ModulaDivi/ModulaDivi.php on line 3
+[30-Jul-2024 13:02:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "MODULA_PATH" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/duplicator/class-modula-duplicator.php:17
+Stack trace:
+#0 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/duplicator/class-modula-duplicator.php(6): Modula_Duplicator->load_dependencies()
+#1 /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/duplicator/class-modula-duplicator.php(35): Modula_Duplicator->__construct()
+#2 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/duplicator/class-modula-duplicator.php on line 17
+[30-Jul-2024 13:02:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_path() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/Modula.php:51
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/Modula.php on line 51
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/functions.php:147
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/functions.php on line 147
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html__() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-centered-statement-small.php:19
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-centered-statement-small.php on line 19
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/template-index-blogging.php:16
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/template-index-blogging.php on line 16
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-subscribe-centered.php:19
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-subscribe-centered.php on line 19
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/gallery-full-screen-image.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/gallery-full-screen-image.php on line 9
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/banner-project-description.php:16
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/banner-project-description.php on line 16
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-search.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-search.php on line 9
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-feature-grid-3-col.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-feature-grid-3-col.php on line 15
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-services-image-left.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-services-image-left.php on line 18
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/gallery-project-layout.php:20
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/gallery-project-layout.php on line 20
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-alternating-images.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-alternating-images.php on line 18
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-content-image-on-right.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-content-image-on-right.php on line 17
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-rsvp.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-rsvp.php on line 10
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/page-rsvp-landing.php:13
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/page-rsvp-landing.php on line 13
+[30-Jul-2024 13:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/template-index-portfolio.php:16
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/template-index-portfolio.php on line 16
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-title-left-image-right.php:20
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-title-left-image-right.php on line 20
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-post-navigation.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-post-navigation.php on line 9
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-comments.php:12
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-comments.php on line 12
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-404.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-404.php on line 10
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/page-newsletter-landing.php:19
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/page-newsletter-landing.php on line 19
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/team-4-col.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/team-4-col.php on line 10
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-pricing.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/cta-pricing.php on line 10
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-faq.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-faq.php on line 11
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_kses_post() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-centered-statement.php:20
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-centered-statement.php on line 20
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-sidebar.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-sidebar.php on line 17
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/posts-list.php:13
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/posts-list.php on line 13
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-project-details.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/text-project-details.php on line 17
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer-colophon-3-col.php:16
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer-colophon-3-col.php on line 16
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer.php:40
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer.php on line 40
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/banner-hero.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/banner-hero.php on line 17
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/posts-grid-2-col.php:13
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/posts-grid-2-col.php on line 13
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-post-meta.php:20
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-post-meta.php on line 20
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-no-results.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-no-results.php on line 9
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_x() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/testimonial-centered.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/testimonial-centered.php on line 11
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_kses_post() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-portfolio-hero.php:16
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/hidden-portfolio-hero.php on line 16
+[30-Jul-2024 13:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer-centered-logo-nav.php:21
+Stack trace:
+#0 {main}
+  thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer-centered-logo-nav.php on line 21
+[30-Jul-2024 13:03:02 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-includes/class-wp-customize-widgets.php on line 905
