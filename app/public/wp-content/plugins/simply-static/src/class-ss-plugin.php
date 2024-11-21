@@ -83,11 +83,17 @@ class Plugin {
 				'filter_task_list'
 			), 10, 2 );
 
-			// Handle Basic Auth.
-			add_filter( 'http_request_args', array( self::$instance, 'add_http_filters' ), 10, 2 );
-
 			// Maybe clear local directory.
 			add_action( 'ss_after_setup_task', array( self::$instance, 'maybe_clear_directory' ) );
+
+			// Add quick link to the plugin page.
+			add_filter( 'plugin_action_links_simply-static/simply-static.php', array(
+				self::$instance,
+				'add_quick_links'
+			) );
+
+			// Handle Basic Auth.
+			add_filter( 'http_request_args', array( self::$instance, 'add_http_filters' ), 10, 2 );
 
 			self::$instance->integrations = new Integrations();
 			self::$instance->integrations->load();
@@ -116,6 +122,10 @@ class Plugin {
 		}
 
 		return self::$instance;
+	}
+
+	public function get_integrations() {
+		return $this->integrations->get_integrations();
 	}
 
 	public function get_integration( $integration ) {
@@ -148,7 +158,6 @@ class Plugin {
 		require_once $path . 'src/tasks/class-ss-setup-task.php';
 		require_once $path . 'src/tasks/class-ss-fetch-urls-task.php';
 		require_once $path . 'src/tasks/class-ss-transfer-files-locally-task.php';
-		require_once $path . 'src/tasks/class-ss-simply-cdn-task.php';
 		require_once $path . 'src/tasks/class-ss-create-zip-archive.php';
 		require_once $path . 'src/tasks/class-ss-wrapup-task.php';
 		require_once $path . 'src/tasks/class-ss-cancel-task.php';
@@ -161,9 +170,10 @@ class Plugin {
 		require_once $path . 'src/class-ss-sql-permissions.php';
 		require_once $path . 'src/class-ss-upgrade-handler.php';
 		require_once $path . 'src/class-ss-util.php';
-		require_once $path . 'src/class-page-handlers.php';
-		require_once $path . 'src/class-integrations.php';
+		require_once $path . 'src/class-ss-page-handlers.php';
+		require_once $path . 'src/class-ss-integrations.php';
 		require_once $path . 'src/admin/inc/class-ss-admin-settings.php';
+		require_once $path . 'src/admin/inc/class-ss-admin-meta.php';
 		require_once $path . 'src/admin/inc/class-ss-migrate-settings.php';
 		require_once $path . 'src/class-ss-multisite.php';
 		require_once $path . 'src/class-ss-plugin-compatibility.php';
@@ -173,6 +183,7 @@ class Plugin {
 	 * Old method to include admin menu.
 	 *
 	 * @return void
+	 * @deprecated
 	 */
 	public function add_plugin_admin_menu() {
 		// Deprecated, only for upgrade support.
@@ -191,6 +202,10 @@ class Plugin {
 		}
 		do_action( 'ss_before_static_export', $blog_id, $type );
 
+		// Clear transients.
+		Util::clear_transients();
+
+		// Start export.
 		$this->archive_creation_job->start( $blog_id, $type );
 
 		// Exit if Basic Auth but no credentials were provided.
@@ -258,7 +273,8 @@ class Plugin {
 
 		do_action( 'ss_before_render_export_log', $blog_id );
 
-		$offset = ( intval( $current_page ) - 1 ) * intval( $per_page );
+		$per_page = $per_page ?: 25;
+		$offset   = ( intval( $current_page ) - 1 ) * intval( $per_page );
 
 		$static_pages = apply_filters(
 			'ss_total_pages_log',
@@ -284,10 +300,23 @@ class Plugin {
 				$display_url = Util::get_path_from_local_url( $parent_static_page->url );
 				$msg         .= "<a href='" . $parent_static_page->url . "'>" . sprintf( __( 'Found on %s', 'simply-static' ), $display_url ) . "</a>";
 			}
+
+			// Combine status messages.
 			if ( $msg !== '' && $static_page->status_message ) {
-				$msg .= '; ';
+				$msg .= ' ';
 			}
-			$msg .= $static_page->status_message;
+
+			// Avoid duplicate status messages.
+			if ( ! empty ( $static_page->status_message ) ) {
+				if ( strpos( $static_page->status_message, ';' ) !== false ) {
+					$cleaned = implode( '', array_unique( explode( '; ', $static_page->status_message ) ) );
+					$msg     .= $cleaned;
+				} else {
+					$msg .= $static_page->status_message;
+				}
+			} else {
+				$msg .= $static_page->status_message;
+			}
 
 			$information = [
 				'id'          => $static_page->id,
@@ -316,45 +345,6 @@ class Plugin {
 	 */
 	public function get_archive_creation_job() {
 		return $this->archive_creation_job;
-	}
-
-	/**
-	 * Set HTTP Basic Auth for wp-background-processing
-	 *
-	 * @param array $parsed_args given args.
-	 * @param string $url given URL.
-	 *
-	 * @return array
-	 */
-	public function add_http_filters( $parsed_args, $url ) {
-		// Check for Basic Auth credentials.
-		if ( strpos( $url, get_bloginfo( 'url' ) ) !== false ) {
-			$digest = self::$instance->options->get( 'http_basic_auth_digest' );
-
-			if ( $digest ) {
-				$parsed_args['headers']['Authorization'] = 'Basic ' . $digest;
-			}
-		}
-
-		// Check for Freemius.
-		if ( false === strpos( $url, '://api.freemius.com' ) ) {
-			return $parsed_args;
-		}
-
-		if ( empty( $parsed_args['headers'] ) ) {
-			return $parsed_args;
-		}
-
-		foreach ( $parsed_args['headers'] as $key => $value ) {
-			if ( 'Authorization' === $key ) {
-				$parsed_args['headers']['Authorization2'] = $value;
-			} else if ( 'Authorization2' === $key ) {
-				$parsed_args['headers']['Authorization'] = $value;
-				unset( $parsed_args['headers'][ $key ] );
-			}
-		}
-
-		return $parsed_args;
 	}
 
 	/**
@@ -410,5 +400,47 @@ class Plugin {
 				Transfer_Files_Locally_Task::delete_local_directory_static_files( $local_dir, $this->options );
 			}
 		}
+	}
+
+	/**
+	 * Register quick links in plugins settings page.
+	 *
+	 * @param array $links given list of links.
+	 *
+	 * @return array
+	 */
+	public function add_quick_links( $links ) {
+		$settings_url = esc_url( get_admin_url() . 'admin.php?page=simply-static-settings' );
+		$docs_url     = esc_url( 'https://docs.simplystatic.com' );
+
+		$links[] = '<a href="' . $settings_url . '">' . esc_html__( 'Settings', 'simply-static' ) . '</a>';
+		$links[] = '<a target="_blank" href="' . $docs_url . '">' . esc_html__( 'Docs', 'simply-static' ) . '</a>';
+
+		return $links;
+	}
+
+	/**
+	 * Set HTTP Basic Auth for wp-background-processing
+	 *
+	 * @param array $parsed_args given args.
+	 * @param string $url given URL.
+	 *
+	 * @return array
+	 */
+	public function add_http_filters( $parsed_args, $url ) {
+
+		if ( ! Util::is_local_url( $url ) ) {
+			return $parsed_args;
+		}
+
+		// Basic Auth?
+		$basic_auth_user = self::$instance->options->get( 'http_basic_auth_username' );
+		$basic_auth_pass = self::$instance->options->get( 'http_basic_auth_password' );
+
+		if ( ! empty( $basic_auth_user ) && ! empty( $basic_auth_pass ) ) {
+			$parsed_args['headers']['Authorization'] = 'Basic ' . base64_encode( $basic_auth_user . ':' . $basic_auth_pass );
+		}
+
+		return $parsed_args;
 	}
 }

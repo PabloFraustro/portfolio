@@ -127,21 +127,6 @@ class Util {
 		$options = get_option( 'simply-static' );
 
 		if ( isset( $options['encryption_key'] ) ) {
-			$htaccess_file = get_home_path() . '.htaccess';
-
-			if ( file_exists( $htaccess_file ) && ! is_multisite() ) {
-				// Set up log file path.
-				$log_file = untrailingslashit( $simply_static_dir ) . DIRECTORY_SEPARATOR . $options['encryption_key'] . '-debug.txt';
-
-				// Write to .htaccess file.
-				$htaccess_inner_content = "\nrequire all denied\nrequire host localhost\n";
-				$htaccess_file_content  = '<Files "' . $log_file . '">' . $htaccess_inner_content . '</Files>';
-
-				if ( file_exists( $log_file ) ) {
-					insert_with_markers( $htaccess_file, 'Simply Static', $htaccess_file_content );
-				}
-			}
-
 			return $simply_static_dir . $options['encryption_key'] . '-debug.txt';
 		} else {
 			return $simply_static_dir . 'debug.txt';
@@ -284,7 +269,7 @@ class Util {
 	public static function create_offline_path( $extracted_path, $page_path, $iterations = 0 ) {
 		// We're done if we get a match between the path of the page and the extracted URL
 		// OR if there are no more slashes to remove
-		if ( strpos( $page_path, '/' ) === false || strpos( $extracted_path, $page_path ) === 0 ) {
+		if ( strpos( $page_path, '/' ) === false || strpos( $extracted_path, trailingslashit( $page_path ) ) === 0 ) {
 			$extracted_path = substr( $extracted_path, strlen( $page_path ) );
 			$iterations     = ( $iterations == 0 ) ? 0 : $iterations - 1;
 			$new_path       = '.' . str_repeat( '/..', $iterations ) . self::add_leading_slash( $extracted_path );
@@ -466,10 +451,20 @@ class Util {
 			'jpeg',
 			'png',
 			'svg',
+			'mp4',
+			'webm',
+			'ogg',
+			'ogv',
+			'mp3',
+			'wav',
 			'json',
 			'js',
 			'css',
 			'xml',
+			'csv',
+			'pdf',
+			'txt',
+			'cur'
 		] );
 
 		$path_info = self::url_path_info( $url );
@@ -533,9 +528,13 @@ class Util {
 	 * @param string $task_name Name of the task
 	 * @param string $message Message to display about the status of the job
 	 *
-	 * @return void
+	 * @return array
 	 */
 	public static function add_archive_status_message( $messages, $task_name, $message ) {
+		if ( ! is_array( $messages ) ) {
+			$messages = array();
+		}
+
 		// if the state exists, set the datetime and message
 		if ( ! array_key_exists( $task_name, $messages ) ) {
 			$messages[ $task_name ] = array(
@@ -598,5 +597,105 @@ class Util {
 	 */
 	public static function normalize_slashes( string $path ): string {
 		return strpos( $path, '\\' ) !== false ? str_replace( '\\', '/', $path ) : $path;
+	}
+
+	/**
+	 * Returns the global $wp_filesystem with credentials set.
+	 * Returns null in case of any errors.
+	 *
+	 * @return \WP_Filesystem_Base|null
+	 */
+	public static function get_file_system() {
+		global $wp_filesystem;
+
+		$success = true;
+
+		// Initialize the file system if it has not been done yet.
+		if ( ! $wp_filesystem ) {
+			require_once ABSPATH . '/wp-admin/includes/file.php';
+
+			$constants = array(
+				'hostname'    => 'FTP_HOST',
+				'username'    => 'FTP_USER',
+				'password'    => 'FTP_PASS',
+				'public_key'  => 'FTP_PUBKEY',
+				'private_key' => 'FTP_PRIKEY',
+			);
+
+			$credentials = array();
+
+			// We provide credentials based on wp-config.php constants.
+			// Reference https://developer.wordpress.org/apis/wp-config-php/#wordpress-upgrade-constants
+			foreach ( $constants as $key => $constant ) {
+				if ( defined( $constant ) ) {
+					$credentials[ $key ] = constant( $constant );
+				}
+			}
+
+			$success = WP_Filesystem( $credentials );
+		}
+
+		if ( ! $success || $wp_filesystem->errors->has_errors() ) {
+			return null;
+		}
+
+		return $wp_filesystem;
+	}
+
+	/**
+	 * Clear all transients used in Simply Static.
+	 *
+	 * @return void
+	 */
+	public static function clear_transients() {
+		// Diagnostics.
+		delete_transient( 'simply_static_checks' );
+		delete_transient( 'simply_static_failed_tests' );
+
+		// Tasks.
+		$tasks = [
+			'fetch_urls',
+			'search',
+			'minify',
+			'optimize_directories',
+			'shortpixel',
+			'shortpixel_download',
+			'aws_empty',
+			'create_zip_archive',
+			'transfer_files_locally',
+			'github_blobs',
+			'github_commit',
+			'bunny_deploy',
+			'tiiny_deploy',
+			'aws_deploy',
+			'sftp_deploy',
+		];
+
+		foreach ( $tasks as $task ) {
+			delete_option( 'simply_static_' . $task . '_total_pages' );
+		}
+	}
+
+	/*
+	 * Get the absolute path to the temporary file directory.
+	 *
+	 */
+	public static function get_temp_dir() {
+		$options = get_option( 'simply-static' );
+
+		if ( empty( $options['temp_files_dir'] ) ) {
+			$upload_dir = wp_upload_dir();
+			$temp_dir   = $upload_dir['basedir'] . DIRECTORY_SEPARATOR . 'simply-static' . DIRECTORY_SEPARATOR . 'temp-files';
+
+			// Check if directory exists.
+			if ( ! is_dir( $temp_dir ) ) {
+				wp_mkdir_p( $temp_dir );
+			}
+
+		} else {
+			$temp_dir = $options['temp_files_dir'];
+		}
+
+		return trailingslashit( $temp_dir );
 	}
 }

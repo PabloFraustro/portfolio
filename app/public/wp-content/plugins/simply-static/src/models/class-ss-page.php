@@ -46,6 +46,7 @@ class Page extends Model {
 		'error_message'       => 'VARCHAR(255) NULL',
 		'status_message'      => 'VARCHAR(255) NULL',
 		'handler'             => 'VARCHAR(255) NULL',
+		'json'                => 'TEXT NULL',
 		'last_checked_at'     => "DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00'",
 		'last_modified_at'    => "DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00'",
 		'last_transferred_at' => "DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00'",
@@ -186,7 +187,11 @@ class Page extends Model {
 	 * @return boolean
 	 */
 	public function is_type( $content_type ) {
-		return stripos( $this->content_type, $content_type ) !== false;
+		if ( ! is_null( $this->content_type ) ) {
+			return stripos( $this->content_type, $content_type ) !== false;
+		}
+
+		return false;
 	}
 
 	/**
@@ -195,7 +200,19 @@ class Page extends Model {
 	 * @return bool
 	 */
 	public function is_binary_file() {
-		return $this->is_type( 'application/octet-stream' ) || $this->is_type( 'image' );
+		if ( $this->is_type( 'application/octet-stream' ) ) {
+			return true;
+		}
+
+		if ( $this->is_type( 'image' ) ) {
+			return true;
+		}
+
+		if ( null === $this->content_type && $this->get_handler_class() === Additional_File_Handler::class ) {
+			return true;
+		}
+
+		return false;
 	}
 
 	public function get_handler_class() {
@@ -236,5 +253,65 @@ class Page extends Model {
 		}
 
 		return parent::attributes( $attributes );
+	}
+
+	/**
+	 * Get JSON
+	 * @return mixed
+	 */
+	public function get_json() {
+		return json_decode( $this->json ?? '', true );
+	}
+
+	/**
+	 * Set JSON
+	 *
+	 * @param array $data Data.
+	 *
+	 * @return void
+	 */
+	public function set_json( $data ) {
+		$this->json = json_encode( $data );
+	}
+
+	/**
+	 * Get the JSON data by a key.
+	 *
+	 * @param string $key Key in JSON.
+	 *
+	 * @return mixed|null
+	 */
+	public function get_json_data_by_key( $key ) {
+		$json = $this->get_json();
+
+		if ( ! $json ) {
+			return null;
+		}
+
+		if ( empty( $json[ $key ] ) ) {
+			return null;
+		}
+
+		return $json[ $key ];
+	}
+
+	/**
+	 * Set the JSON data for a key.
+	 *
+	 * @param string $key Key under which sets the data.
+	 * @param mixed $data Mixed data.
+	 *
+	 * @return void
+	 */
+	public function set_json_data_by_key( $key, $data ) {
+		$json = $this->get_json();
+
+		if ( ! $json ) {
+			$json = [];
+		}
+
+		$json[ $key ] = $data;
+
+		$this->set_json( $json );
 	}
 }

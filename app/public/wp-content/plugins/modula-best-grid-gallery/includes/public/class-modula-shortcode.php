@@ -37,7 +37,7 @@ class Modula_Shortcode {
 		add_action( 'modula_item_after_image', 'modula_mobile_share', 100 );
 
 		// Add custom body class (helps with stronger selectors for conflicting themes)
-		add_filter( 'body_class', array( $this, 'add_modula_body_class' ) );
+		add_filter( 'body_class', array( $this, 'add_modula_body_class' ), 100 );
 	}
 
 	public function add_gallery_scripts() {
@@ -48,11 +48,12 @@ class Modula_Shortcode {
 		wp_register_style( 'modula', MODULA_URL . 'assets/css/front.css', null, MODULA_LITE_VERSION );
 
 		// Scripts necessary for some galleries
+		wp_register_script('dompurify', MODULA_URL . 'assets/js/front/purify.min.js', array(), MODULA_LITE_VERSION, true );
 		wp_register_script( 'modula-isotope', MODULA_URL . 'assets/js/front/isotope' . $suffix . '.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
 		wp_register_script( 'modula-isotope-packery', MODULA_URL . 'assets/js/front/isotope-packery' . $suffix . '.js', array( 'jquery', 'modula-isotope' ), MODULA_LITE_VERSION, true );
 		wp_register_script( 'modula-grid-justified-gallery', MODULA_URL . 'assets/js/front/justifiedGallery' . $suffix . '.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
 		wp_register_script( 'modula-fancybox', MODULA_URL . 'assets/js/front/fancybox' . $suffix . '.js', array( 'jquery', 'modulaFancybox' ), MODULA_LITE_VERSION, true );
-		wp_register_script( 'modulaFancybox', MODULA_URL . 'assets/js/front/modula-fancybox' . $suffix . '.js', array(), MODULA_LITE_VERSION, true );
+		wp_register_script( 'modulaFancybox', MODULA_URL . 'assets/js/front/modula-fancybox' . $suffix . '.js', array('dompurify'), MODULA_LITE_VERSION, true );
 		wp_add_inline_script( 'modulaFancybox', "const ModulaShareButtons = '" . addslashes( json_encode( Modula_Helper::render_lightbox_share_template() ) ) . "';", 'before' );
 		wp_register_script( 'modula-lazysizes', MODULA_URL . 'assets/js/front/lazysizes' . $suffix . '.js', array( 'jquery' ), MODULA_LITE_VERSION, true );
 
@@ -366,7 +367,7 @@ class Modula_Shortcode {
 		$css  = apply_filters( 'modula_shortcode_css', $css, $gallery_id, $settings );
 
 		if ( strlen( $settings['style'] ) ) {
-			$css .= esc_html( $settings['style'] );
+			$css .= htmlspecialchars_decode( $settings['style'] );
 		}
 
 		// Responsive fixes

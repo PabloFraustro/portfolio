@@ -56,6 +56,7 @@ jQuery(window).on('elementor/frontend/init', function () {
 			lightbox       : 'fancybox',
 			lightboxOpts   : {},
 			inView         : false,
+			originLeft     : true,
 		};
 
 	// The actual plugin constructor
@@ -360,6 +361,7 @@ jQuery(window).on('elementor/frontend/init', function () {
 		var packery_args = {
 			itemSelector: '.modula-item',
 			layoutMode  : 'packery',
+			originLeft  : plugin.options.originLeft,
 			packery     : {
 				gutter: parseInt(plugin.options.gutter),
 			},
@@ -433,6 +435,7 @@ jQuery(window).on('elementor/frontend/init', function () {
 				resizesContainer: false,
 				itemSelector    : '.modula-item',
 				layoutMode      : 'packery',
+				originLeft      : instance.options.originLeft,
 				packery         : {
 					gutter: parseInt(instance.options.gutter),
 				},
@@ -468,6 +471,7 @@ jQuery(window).on('elementor/frontend/init', function () {
 										 itemSelector: '.modula-item',
 										 // percentPosition: true,
 										 layoutMode: 'packery',
+										 originLeft: this.options.originLeft,
 										 packery   : {
 											 // use element for option
 											 gutter: parseInt(this.options.gutter),
@@ -610,6 +614,7 @@ jQuery(window).on('elementor/frontend/init', function () {
 				instance.$itemsCnt
 						.modulaisotope({
 										   packery: {
+											   originLeft: instance.options.originLeft,
 											   gutter: parseInt(instance.options.gutter),
 										   },
 									   })
@@ -1246,7 +1251,9 @@ jQuery(window).on('elementor/frontend/init', function () {
 
 jQuery(document).ready(function () {
 	var modulaGalleries = jQuery('.modula.modula-gallery');
-
+	if (!jQuery('body').hasClass('modula-best-grid-gallery')) {
+		jQuery('body').addClass('modula-best-grid-gallery');
+	}
 	jQuery.each(modulaGalleries, function () {
 		var modulaSettings = jQuery(this).data('config');
 
@@ -1259,6 +1266,9 @@ jQuery(document).on('elementor/popup/show', (event, id, instance) => {
 	var modulaGalleries = jQuery('#elementor-popup-modal-' + id).find(
 		'.modula.modula-gallery'
 	);
+	if (!jQuery('body').hasClass('modula-best-grid-gallery')) {
+		jQuery('body').addClass('modula-best-grid-gallery');
+	}
 	jQuery.each(modulaGalleries, function () {
 		var modulaSettings = jQuery(this).data('config');
 

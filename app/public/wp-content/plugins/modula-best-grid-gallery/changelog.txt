@@ -1,3 +1,87 @@
+== Changelog ==
+= 2.11.2 - 20.11.2024 =
+Added: Increased functionality for sanitization of gallery settings.
+
+= 2.11.1 - 06.11.2024 =
+Changed: Notification action option to permanently dissmiss a notice.
+
+= 2.11.0 - 24.10.2024 =
+Added: Upload images from folder functionality
+Added: Upload images from zip file functionality
+Added: New notifications system
+
+= 2.10.3 - 10.10.2024 =
+Fixed: Upload position setting not being saved.
+
+= 2.10.2 - 30.09.2024 =
+Added: Multiple columns for the Masonry gallery type
+Fixed: Sanitize captions for fancybox (security fix)
+
+= 2.10.1 - 19.09.2024 =
+Changed: Hide instead of disable admin settings on parent change. ( [#1031]( https://github.com/WPChill/modula-lite/issues/1031) )
+Fixed: PHP warning: undefined value.( [#1041]( https://github.com/WPChill/modula-lite/issues/1041) )
+Added: General settings upsell for Modula Video
+Fixed: Guntenberg js errors
+
+= 2.10.0 - 10.09.2024 =
+Fixed: Debug metabox default to off ( [#1035]( https://github.com/WPChill/modula-lite/issues/1035) )
+Added: Image upload position choice, users can now choose where to upload images in the gallery. ( [#1015](https://github.com/WPChill/modula-lite/issues/1015) )
+Changed: UI improvements for the gallery edit page. ( [#1034](https://github.com/WPChill/modula-lite/issues/1034) )
+
+= 2.9.5 - 09.09.2024 =
+Fixed: Compatibility with ACF Pro ( [#937]( https://github.com/WPChill/modula-lite/issues/937) )
+Fixed: Not importing sourge-gallery captions for existing media images. ( [#904]( https://github.com/WPChill/modula-lite/issues/904) )
+Fixed: Admin table listing error when searching for string containing %s. ( [#1036]( https://github.com/WPChill/modula-lite/issues/1036) )
+
+= 2.9.4 - 30.08.2024 =
+Removed: Build files from repository.
+
+= 2.9.3 - 30.08.2024 =
+Added: Added rest fields for metafields.
+
+= 2.9.2 - 29.08.2024 =
+Fixed: Security fix for Gallery CPT export
+
+= 2.9.1 - 14.08.2024 =
+Fixed: PHP warning: undefined key. ( [#1018]( https://github.com/WPChill/modula-lite/issues/1018) )
+Added: RTL elements orientation option added to isotope script. ( [#987]( https://github.com/WPChill/modula-lite/issues/987) )
+
+= 2.9.0 - 12.08.2024 =
+Added: bnb like gallery layout upsell setting.
+Fixed: Error with Elementor theme builder.
+Fixed: No gallery preview in gutenberg editor.
+Changed: Move body_class filter to a higher priority
+Added: Image option to hide the title
+Added: Search gallery by id
+Added: Filter galleries admin list table by gallery type.
+
+= 2.8.19 - 30.07.2024 =
+Fixed: Error with Divi builder.
+
+= 2.8.18 - 30.07.2024 =
+Fixed: Images inserted from the WordPress Media Library were not scaling correctly in the custom grid-type gallery.
+
+= 2.8.17 - 30.07.2024 =
+Added: WordPress Media library option to add selected(grid) or checked(list) images to a Modula gallery.( [#1002]( https://github.com/WPChill/modula-lite/issues/1002) )
+Changed: Removed WPChill tracking option.( [#1007]( https://github.com/WPChill/modula-lite/issues/1007) )
+
+= 2.8.16 - 20.07.2024 =
+Fixed: Edit/New gallery was not working properly due to debug class
+
+= 2.8.15 - 19.07.2024 =
+Changed: Update Twitter logo in share.
+Changed: Removed compatibility code that was creating issues in mobile lightboxes.
+Fixed: Gallery custom CSS '>' selector was html encoded and not working on front-end.
+Changed: Image licensing license selector design.
+Fixed: Admin menu ordering.
+Changed: Captions "Title Color" & "Title Font Size" defaults.
+Fixed: Captions & title child settings cannot be edited after toggling parent setting ON.
+Fixed: Gallery deug metabox won't stay on.
+
+= 2.8.14 - 08.07.2024 =
+Added: Support for Modula Image SEO addon
+Changed: Compatibility for Modula Slider with Fancybox Carousel & Guttenberg block
+
 = 2.8.13 - 26.06.2024 = 
 Changed: Optimize galleries DB count chech for onboarding display.
 Fixed: Removed lightbox double zoom button fancybox 5 compatibility.
