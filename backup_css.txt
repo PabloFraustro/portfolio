@@ -1,0 +1,58 @@
+html body .modula .modula-item.effect-pufrobo .jtg-title::after, html body .modula .modula-item.effect-pufrobo p {
+    -webkit-transition: opacity .15s, -webkit-transform .35s;
+    transition: opacity .15s, transform .35s;
+}
+
+
+
+/* Default visibility (for desktop and larger screens) */
+.mobile-menu {
+    display: none !important;
+}
+.not-mobile-menu {
+    display: block !important;
+}
+
+
+@media only screen and (min-width: 769px) {
+
+.icons-about{
+ float: left ;
+   margin-inline-start: 0;
+    margin-inline-end: 2em;
+    padding-left: 1rem !important;
+}
+
+.footer-signature{
+padding-top:10em !important;
+}
+}
+
+
+/* Hide menu link for mobile devices */
+@media only screen and (max-width: 768px) {
+.footer-signature{
+padding-top:5em !important;
+}
+    .mobile-menu {
+        display: block !important;
+    }
+    .not-mobile-menu {
+        display: none !important;
+    }
+.img-about{
+float:none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.prg-about{
+padding-right: var(--wp--preset--spacing--10) !important;}
+.icons-about{
+font-size:35px !important;}
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.current-menu-item a {
+    color: #C09BEA !important;
+}
