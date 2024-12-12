@@ -35312,3 +35312,8 @@ Stack trace:
 #0 {main}
   thrown in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/themes/twentytwentyfour/patterns/footer-centered-logo-nav.php on line 21
 [21-Nov-2024 12:10:28 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[09-Dec-2024 14:17:52 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[12-Dec-2024 10:43:56 UTC] PHP Warning:  Undefined array key "gallery_id" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php on line 343
+[12-Dec-2024 10:50:01 UTC] PHP Warning:  Undefined array key "gallery_id" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php on line 343
+[12-Dec-2024 10:50:04 UTC] PHP Warning:  Undefined array key "gallery_id" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php on line 343
+[12-Dec-2024 10:58:44 UTC] PHP Warning:  Undefined array key "gallery_id" in /Users/pablofraustro/Local Sites/portfolio/app/public/wp-content/plugins/modula-best-grid-gallery/includes/class-modula-backward-compatibility.php on line 343
